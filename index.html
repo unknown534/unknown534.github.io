@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaka Sukmara - Resume</title>
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+        
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        
+        .contact-info {
+            margin-bottom: 10px;
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255,255,255,0.5), transparent);
+            margin: 20px 0;
+        }
+        
+        /* Content Styles */
+        .content {
+            padding: 30px;
+        }
+        
+        /* Section Styles */
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+        }
+        
+        /* Skills Styles */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-item {
+            background-color: #eef5ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid #d0e2ff;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-item:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-2px);
+        }
+        
+        /* Education & Experience Styles */
+        .education-item, .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 3px solid #3498db;
+        }
+        
+        .institution {
+            font-weight: bold;
+            font-size: 18px;
+            color: #2c3e50;
+        }
+        
+        .details {
+            font-size: 15px;
+            color: #555;
+            margin: 5px 0;
+        }
+        
+        .date-range {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        /* Work Experience List */
+        .experience-list {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+        
+        .experience-list li {
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .experience-list li:before {
+            content: "•";
+            color: #3498db;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #f8f9fa;
+            color: #7f8c8d;
+            font-size: 14px;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .resume-container {
+                padding: 0;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            .skills-container {
+                flex-direction: column;
+            }
+            
+            .profile-image {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .name {
+                font-size: 26px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .name {
+                font-size: 22px;
+            }
+            
+            .section-title {
+                font-size: 18px;
+            }
+            
+            .header {
+                padding: 20px;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="profile-container">
+                <img src="https://avatars.githubusercontent.com/u/56154522?v=4" alt="Foto Profil Jaka Sukmara" class="profile-image">
+                <h1 class="name">Jaka Sukmara</h1>
+            </div>
+            <div class="contact-info">
+                <p>Mindi, Leuwimunding Majalengka, Jawa barat</p>
+                <p>0831 5068 0617</p>
+                <p>jakajekbae@proton.me</p>
+            </div>
+        </div>
+        
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Hard Skills Section -->
+            <div class="section">
+                <h2 class="section-title">Hard Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">Mengoperasikan oven industri (SWAKN)</div>
+                    <div class="skill-item">Dasar pemrograman dan logika pemrograman</div>
+                    <div class="skill-item">Pengembangan website</div>
+                    <div class="skill-item">Sistem operasi Linux/Ubuntu</div>
+                </div>
+            </div>
+            
+            <!-- Soft Skills Section -->
+            <div class="section">
+                <h2 class="section-title">Soft Skills</h2>
+                <div class="skills-container">
+                    <div class="skill-item">Disiplin</div>
+                    <div class="skill-item">Bertanggung jawab</div>
+                    <div class="skill-item">Manajemen waktu</div>
+                    <div class="skill-item">Kreativitas</div>
+                </div>
+            </div>
+            
+            <!-- Education Section -->
+            <div class="section">
+                <h2 class="section-title">Pendidikan</h2>
+                <div class="education-item">
+                    <div class="institution">SDN Mindi 1</div>
+                    <div class="date-range">2011-2016</div>
+                </div>
+                <div class="education-item">
+                    <div class="institution">MTSN 1 Majalengka</div>
+                    <div class="date-range">2016-2019</div>
+                </div>
+                <div class="education-item">
+                    <div class="institution">SMK KarNas Sindangwangi</div>
+                    <div class="details">Teknik Komputer dan Jaringan</div>
+                    <div class="date-range">2019-2022</div>
+                </div>
+            </div>
+            
+            <!-- Work Experience Section -->
+            <div class="section">
+                <h2 class="section-title">Pengalaman kerja</h2>
+                <div class="experience-item">
+                    <div class="institution">Formal</div>
+                    <div class="institution">PT Kaldu Sari Nabati Indonesia</div>
+                    <ul class="experience-list">
+                        <li>Posisi sebagai helper produkci di bagian oven dan juga mampu mengoperasikan mesin oven industri</li>
+                        <li>Membersihkan mesin 3 kali dalam 1 shift</li>
+                        <li>Megisi laporan tertulis setiap 1 jam sekali</li>
+                    </ul>
+                    <div class="date-range">01 Maret 2024 s.d 20 Juni 2025</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>Curriculum Vitae - <a href="https://github.com/unknown534">Jaka Sukmara</a></p>
+        </div>
+    </div>
+</body>
+</html>
